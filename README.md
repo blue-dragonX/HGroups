@@ -6,7 +6,8 @@ Notes on HGroups Package:
 
 About:
 
-Each Instance can hold up to a maximum of what their Class names entail of any Object combinatoions:
+Each Instance can hold up to a maximum of what their Class names entail of any Object combinatoions:    
+
 Pair- 2
 Triad- 3
 Tetrad - 4
