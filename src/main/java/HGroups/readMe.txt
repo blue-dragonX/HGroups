@@ -42,6 +42,6 @@ Type Y is a Variable type that is to return any data type hence why casting or p
 
 printing the group: printGroup()
 
-teh print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
+the print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
 method will print objectType and emory location. As of this version(1.0) there is no method to custom print.
 
