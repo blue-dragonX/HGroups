@@ -37,7 +37,7 @@ traidExample.get("Hello Wold") would result in a pair containing (Y)(1, Book(tit
 Pair get(int i) returns the other data in the pair:
 pair.get(1) would result in (Y)(Book(title))
 
-Type Y is a Variable type that is to return any data type hence why casting or pre-storage is necessary for use.
+Type Y is a generic type that is to return any data type hence why casting or pre-storage(assign to a variable) is necessary for use.
 
 
 printing the group: printGroup()
