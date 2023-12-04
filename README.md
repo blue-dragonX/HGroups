@@ -44,4 +44,4 @@ Type Y is a generic type that is to return any data type hence why casting or pr
 printing the group: printGroup()
 
 the print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
-method will print objectType and emory location. As of this version(1.0) there is no method to custom print.
+method will print objectType and memory location. As of this version(1.0) there is no method to custom print.
