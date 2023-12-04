@@ -9,10 +9,10 @@ About:
 Each Instance can hold up to a maximum of what their Class names entail of any Object combinatoions:    
 
 Pair- 2 <br />
-    Triad- 3<br />
-    Tetrad - 4<br />
-    Pentad- 5<br />
-    Hexad-6
+Triad- 3<br />
+Tetrad - 4<br />
+Pentad- 5<br />
+Hexad-6<br />
 ...
 
 A Tetrad can either be created directly (4 Objects) or a merge of 2 Pairs (denoted as pair1 and pair2)
