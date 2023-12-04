@@ -8,10 +8,10 @@ About:
 
 Each Instance can hold up to a maximum of what their Class names entail of any Object combinatoions:    
 
-Pair- 2
-    Triad- 3
-    Tetrad - 4
-    Pentad- 5
+Pair- 2 <br />
+    Triad- 3<br />
+    Tetrad - 4<br />
+    Pentad- 5<br />
     Hexad-6
 ...
 
