@@ -9,7 +9,7 @@ About:
 Each Instance can hold up to a maximum of what their Class names entail of any Object combinatoions:    
 
 Pair- 2
-Triad- 3
+\n Triad- 3
 Tetrad - 4
 Pentad- 5
 Hexad-6
