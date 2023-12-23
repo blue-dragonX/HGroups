@@ -1,4 +1,4 @@
-# HGroups Package v1.0
+# HGroups Package v1.1: Ennead Update
 Notes on HGroups Package:
 
 
@@ -12,7 +12,10 @@ Pair- 2 <br />
 Triad- 3<br />
 Tetrad - 4<br />
 Pentad- 5<br />
-Hexad-6<br />
+Hexad- 6<br />
+Heptad- 7 <br />
+Octad- 8 <br />
+Ennead- 9 <br />
 ...
 
 A Tetrad can either be created directly (4 Objects) or a merge of 2 Pairs (denoted as pair1 and pair2)

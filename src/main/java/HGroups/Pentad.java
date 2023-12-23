@@ -36,9 +36,9 @@ public class Pentad<S,T,U,W,X> {
         };
     }
     public Tetrad get(W dataAsk){
-        if(dataAsk!=null && dataAsk.equals(this.data))
+        if(dataAsk!=null && dataAsk.equals(this.data)) {
             return new Tetrad<>(this.data2,this.data3,this.data4,this.data5);
-        else if(dataAsk!=null && dataAsk.equals(this.data2))
+        } else if(dataAsk!=null && dataAsk.equals(this.data2))
             return new Tetrad<>(this.data,this.data3,this.data4,this.data5);
         else if(dataAsk!=null && dataAsk.equals(this.data3))
             return new Tetrad<>(this.data,this.data2,this.data4,this.data5);

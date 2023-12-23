@@ -24,7 +24,8 @@ public class Pair<T, U> {
         return switch (i) {
             case 1 -> (Y) data;
             case 2 -> (Y) data2;
-            default -> throw new NullPointerException("Invalid entry: "+i);
+            default -> throw new NullPointerException("Invalid entry: " +
+                    ""+i);
         };
     }
 
