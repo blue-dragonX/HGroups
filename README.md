@@ -49,5 +49,6 @@ printing the group: printGroup()
 the print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
 method will print objectType and memory location. As of this version(1.1) there is no method to custom print.
 
-Goal: />
-The goal of this library is to be a tool for those who intend to analyze data in a local enviroment without the need for a full database structures. 
+Goal:<br />
+
+The goal of this library is to be a tool for those who intend to analyze data in a local java enviroment without the need for a full database structure. Similar to tuples, HGroups can contain any object type in each value. Unlike tuples, users can manipulate these HGoups into what is needed.   
