@@ -51,4 +51,4 @@ method will print objectType and memory location. As of this version(1.1) there 
 
 Goal:<br />
 
-The goal of this library is to be a tool for those who intend to analyze data in a local java enviroment without the need for a full database structure. Similar to tuples, HGroups can contain any object type in each value. Unlike tuples, users can manipulate these HGoups into what is needed.   
+The goal of this library is to be a tool for those who intend to analyze data in a local java environment without the need for a full database structure. Similar to tuples, HGroups can contain any object type in each value. Unlike tuples, users can manipulate these HGoups into what is needed.   
