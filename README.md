@@ -6,12 +6,13 @@ What is new in v1.2:
 
 This will return: Class type, all public method names (bulit-in and custom), and public fields.
 
+<br />
+<br />
 
-
-Notes on HGroups Package:
+Notes on HGroups Package:<br />
 Car object and Main is for testing purposes.
 
-
+<br />
 
 About:
 
@@ -36,13 +37,14 @@ The merge happens with contents of triad being added as data, data2, and data3 a
 code: new Pentad(data, data2, data3, data4, data5) "or" new Pentad(triad, pair)
 
 
-_____________________________________________
-Methods
-_____________________________________________
+<br />
+<br />
+Methods:
+<br />
+<br />
 
-
-get(X data)
-__________
+.get(X data):
+<br />
 All get(X data) and retrieve(int i) methods require either seperate assignment to a variable or casting before usage.
 
 get creates a Tuple rank lower of the other elements Ex:
@@ -57,26 +59,28 @@ Type Y is a generic type that is to return any data type hence why casting or pr
 
 If object is not in structure, method will throw NullPointerException.
 
+<br />
+<br />
+.retirieve(number):
 
+Get data at index number. If number is below or above size, method will throw NullPointerException.
 
-retirieve(number)
-_________________
-get data at index number. If number is below or above size, method will throw NullPointerException.
-
-
-
-printing the group: printGroup()
-_______________________________
-the print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
+<br />
+<br />
+.printGroup():
+<br />
+The print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
 method will print objectType and memory location. As of this version(1.1) there is no method to custom print.
 
-
-
-getInfo(obj.retrieve(x))
-________________________
+<br />
+<br />
+.getInfo(obj.retrieve(x)) : 
+<br />
 This method allows a user to get information about class type, methods, and fields (public only) from an object. How it is typed, let x be the index of the object in the structure (I named 'value'): value.getinfo(value.retirieve(x));
 
+<br />
 
+<br />
 
 Goal:<br />
 
