@@ -36,7 +36,9 @@ The merge happens with contents of triad being added as data, data2, and data3 a
 code: new Pentad(data, data2, data3, data4, data5) "or" new Pentad(triad, pair)
 
 
-
+_____________________________________________
+Methods
+_____________________________________________
 
 
 get(X data)
