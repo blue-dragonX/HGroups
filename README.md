@@ -1,6 +1,15 @@
-# HGroups Package v1.1: Ennead Update
-Notes on HGroups Package:
+# HGroups Package v1.2: GetInfo Update
 
+
+What is new in v1.2:
+-new method added: .getInfo(). This method allows a user to get information about class type, methods, and fields (public only) from an object. How it is typed, let x be the index of teh object in the structure: value.getinfo(value.retirieve(x));
+
+This will return: Class type, all public method names (bulit-in and custom), and public fields.
+
+
+
+Notes on HGroups Package:
+Car object and Main is for testing purposes.
 
 
 
@@ -29,8 +38,9 @@ code: new Pentad(data, data2, data3, data4, data5) "or" new Pentad(triad, pair)
 
 
 
-get(X data)
 
+get(X data)
+__________
 All get(X data) and retrieve(int i) methods require either seperate assignment to a variable or casting before usage.
 
 get creates a Tuple rank lower of the other elements Ex:
@@ -43,11 +53,28 @@ pair.get(1) would result in (Y)(Book(title))
 
 Type Y is a generic type that is to return any data type hence why casting or pre-storage(assign to a variable) is necessary for use.
 
+If object is not in structure, method will throw NullPointerException.
+
+
+
+retirieve(number)
+_________________
+get data at index number. If number is below or above size, method will throw NullPointerException.
+
+
 
 printing the group: printGroup()
-
+_______________________________
 the print method creates an f string of elements of the tuple and prints it to consoles. If custom Object, the print
 method will print objectType and memory location. As of this version(1.1) there is no method to custom print.
+
+
+
+getInfo(obj.retrieve(x))
+________________________
+This method allows a user to get information about class type, methods, and fields (public only) from an object. How it is typed, let x be the index of the object in the structure (I named 'value'): value.getinfo(value.retirieve(x));
+
+
 
 Goal:<br />
 
