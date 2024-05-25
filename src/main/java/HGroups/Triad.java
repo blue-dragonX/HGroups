@@ -1,4 +1,8 @@
 package HGroups;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 public class Triad<S,T,U> {
    private S data;
     private T data2;
@@ -21,18 +25,30 @@ public class Triad<S,T,U> {
             throw new NullPointerException("Invalid entry: "+data);
     }
 
-    public<Y> Y retrieve(int i){
+    public <Y> Y retrieve(int i){
         return switch (i) {
-            case 1-> (Y) data;
+            case 1->  (Y)data;
             case 2-> (Y) data2;
-            case 3->(Y) data3;
+            case 3->(Y)data3;
             default->throw new NullPointerException("Invalid entry: "+i);
         };
     }
     public void printGroup(){
         System.out.printf("%s, %s, %s", data, data2,data3);
     }
-
+    public<Y> void getInfo(Y query){
+        Method[] methods = query.getClass().getMethods();
+        Field[] fields = query.getClass().getFields();
+        System.out.printf("%s \n Fields(Public):", query.getClass());
+        for (Field field: fields) {
+            System.out.printf(" %s,",field);
+        }
+        System.out.println();
+        System.out.println("Methods(Public):");
+        for (Method method: methods) {
+            System.out.printf(" %s,",method);
+        }
+    }
 
 }
 

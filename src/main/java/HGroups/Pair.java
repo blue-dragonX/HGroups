@@ -1,5 +1,8 @@
 package HGroups;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 @SuppressWarnings({"unchecked", "FieldMayBeFinal"})
 public class Pair<T, U> {
    private T data;
@@ -33,5 +36,17 @@ public class Pair<T, U> {
         System.out.printf("%s, %s", data, data2);
     }
 
-
+    public <A> void getInfo(A query) {
+        Method[] methods = query.getClass().getMethods();
+        Field[] fields = query.getClass().getFields();
+        System.out.printf("%s \n Fields(Public):", query.getClass());
+        for (Field field : fields) {
+            System.out.printf(" %s,", field);
+        }
+        System.out.println();
+        System.out.println("Methods(Public):");
+        for (Method method : methods) {
+            System.out.printf(" %s,", method);
+        }
+    }
 }

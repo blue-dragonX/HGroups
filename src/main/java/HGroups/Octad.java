@@ -1,6 +1,10 @@
 package HGroups;
 
+
 import org.jetbrains.annotations.NotNull;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 @SuppressWarnings({"FieldMayBeFinal", "unchecked", "unused"})
 public class Octad<S,T,U,V,W,X,Y,Z> {
@@ -109,6 +113,19 @@ public class Octad<S,T,U,V,W,X,Y,Z> {
     }
     public void printGroup(){
         System.out.printf("%s, %s, %s, %s, %s, %s, %s, %s", data, data2,data3,data4,data5,data6,data7, data8);
+    }
+    public <A> void getInfo(A query) {
+        Method[] methods = query.getClass().getMethods();
+        Field[] fields = query.getClass().getFields();
+        System.out.printf("%s \n Fields(Public):", query.getClass());
+        for (Field field : fields) {
+            System.out.printf(" %s,", field);
+        }
+        System.out.println();
+        System.out.println("Methods(Public):");
+        for (Method method : methods) {
+            System.out.printf(" %s,", method);
+        }
     }
 
 }

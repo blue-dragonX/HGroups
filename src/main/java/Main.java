@@ -1,28 +1,17 @@
 import HGroups.*;
-
-
+import java.lang.reflect.Method;
 public class Main {
     public static void main(String[] args) {
-        Triad<Integer, String, Double> testTriad = new Triad<>(1,"Hello", 7.5);
-        Triad<Car, String, Double> testTriad2 = new Triad<>(new Car("Humvee"),"Hlo", 7.599);
-        Pentad<Integer, Double, String, Car, String> testPentad = new Pentad<>(1,3.14, "Hello World!", new Car("Beetle"),"Goodbye!");
-        Pair pair1 = testTriad.get(1);
-        pair1.printGroup();
-        testPentad.printGroup();
-        System.out.println("\n");
-        int x = testTriad.retrieve(1);
-        Car testCar= testPentad.retrieve(4);
-        System.out.println(testCar.getName());
-        System.out.println(x);
-        double doubelFromTriad= testTriad.retrieve(3);
-        System.out.println(doubelFromTriad*2);
-        testTriad.printGroup();
+     Triad<String, Integer, Car> person1 = new Triad<>("Phillip", 45, new Car("Volkswagen"));
+        Pair<Integer, Car> person1Car= person1.get("Phillip");
+        System.out.println(person1.<Car>retrieve(3).getName());
+        String q = person1.retrieve(1);
+        person1Car.printGroup();
+        Pentad<String, Integer, Car, Integer, Double> person12= new Pentad<>(person1,new Pair<>(33,3.14) );
         System.out.println();
-        Hexad<Integer, String, Double,Integer,Integer,String> hexad1 = new Hexad<>(testTriad,new Triad<>(6,8,"Goodbye"));
-        hexad1.printGroup();
-        var heptad1 = new Heptad<>(hexad1,32221.222);
-        System.out.println("\n\n"+heptad1.retrieve(7).getClass());
-        var octad = new Octad<>(testTriad2,testTriad, pair1);
-        octad.printGroup();
+        person12.printGroup();
+        System.out.println();
+Tetrad<String, Integer, Car,Double> test = new Tetrad<>("Phil", 35, new Car("BMW"),3.14);
+test.getInfo(test.retrieve(3));
     }
 }

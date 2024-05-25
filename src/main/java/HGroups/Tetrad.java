@@ -1,5 +1,11 @@
 package HGroups;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Tetrad<S,T,U,V>  {
     private S data;
     private T data2;
@@ -18,7 +24,7 @@ public class Tetrad<S,T,U,V>  {
         this.data3 = pair2.retrieve(1);
         this.data4 = pair2.retrieve(2);
     }
-    public<Y,Z> Y retrieve(int i){
+    public<Y> Y retrieve(int i){
 
         if (i==1)
             return (Y)data;
@@ -46,5 +52,19 @@ public class Tetrad<S,T,U,V>  {
     public void printGroup(){
         System.out.printf("%s, %s, %s, %s", data, data2,data3,data4);
     }
+    public<Y> void getInfo(Y query){
+        Method[] methods = query.getClass().getMethods();
+        Field[] fields = query.getClass().getFields();
+        System.out.printf("%s \n Fields(Public):", query.getClass());
+        for (Field field: fields) {
+            System.out.printf(" %s,",field);
+        }
+        System.out.println();
+        System.out.println("Methods(Public):");
+        for (Method method: methods) {
+            System.out.printf(" %s,",method);
+        }
+    }
+
 
 }

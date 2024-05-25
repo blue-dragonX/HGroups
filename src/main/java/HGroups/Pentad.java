@@ -1,6 +1,8 @@
 package HGroups;
 
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 @SuppressWarnings({"FieldMayBeFinal", "unchecked", "unused"})
 public class Pentad<S,T,U,W,X> {
@@ -50,6 +52,19 @@ public class Pentad<S,T,U,W,X> {
             throw new NullPointerException("Invalid entry: "+dataAsk);
     }
     public void printGroup(){
-        System.out.printf("%s, %s, %s,%s,%s", data, data2,data3,data4,data5);
+        System.out.printf("%s, %s, %s,%s,%s", data, data2,data3.getClass().getName(),data4,data5);
+    }
+    public<Y> void getInfo(Y query){
+        Method[] methods = query.getClass().getMethods();
+        Field[] fields = query.getClass().getFields();
+        System.out.printf("%s \n Fields(Public):", query.getClass());
+        for (Field field: fields) {
+            System.out.printf(" %s,",field);
+        }
+        System.out.println();
+        System.out.println("Methods(Public):");
+        for (Method method: methods) {
+            System.out.printf(" %s,",method);
+        }
     }
 }
